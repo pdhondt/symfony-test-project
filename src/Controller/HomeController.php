@@ -22,4 +22,14 @@ class HomeController extends AbstractController
             'hobbies' => $hobbies
         ]);
     }
+
+    #[Route('/info', name: 'info')]
+    public function info(): Response
+    {
+
+        return $this->render('home/info.html.twig', [
+
+        ]);
+    }
+
 }
